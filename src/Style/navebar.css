@@ -1,0 +1,27 @@
+.navbar-container , .search-container , .search-wrepper,.navbar-manuitem-container{
+    display: flex;
+    align-items: center;
+}
+.navbar-container{
+    justify-content: space-between;
+    padding: 10px 20px;
+    gap: 20px;
+    background-color: white;
+}
+.search-container{
+    gap: 20px;
+}
+.search-wrepper{
+    border: 0.5px solid lightgray;
+    padding: 5px 8px;
+}
+.search-wrepper input{
+    border: none;
+}
+.navbar-manuitem-container{
+    gap: 10px;
+}
+.navbar-manuitem-container div , .search-container div:first-child{
+    font-size: 14px;
+    cursor: pointer;
+}
