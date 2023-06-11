@@ -13,7 +13,7 @@ const Navbar = () => {
                     <Search style={{color : "gray" , fontSize : "16px"}}/>
                 </div>
             </div>
-            <h1>Duleman</h1>
+            <h1>Suleman</h1>
             <div className="navbar-manuitem-container">
                 <div>REGISTER</div>
                 <div>SIGN IN</div>
