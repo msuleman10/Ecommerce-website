@@ -45,7 +45,7 @@ const Slider = () => {
             <Wrapper slideindex={slideIndex}>
                 {sliderItems.map((item)=>{
                     return(
-                    <div className="slide">
+                    <div className="slide" key={item.id}>
                         <div className="image-container">
                             <img src={item.img} alt="man-img" />
                         </div>
