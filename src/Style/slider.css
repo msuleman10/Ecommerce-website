@@ -5,13 +5,6 @@
     position: relative;
     overflow: hidden;
 }
-
-.slide{
-    min-width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-}
 .image-container {
     height: 100%;
     flex: 1;

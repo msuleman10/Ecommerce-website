@@ -28,6 +28,14 @@ const Wrapper = styled.div`
     transform: translateX(${(props) => props.slideindex * -100}vw);
     transition: all 1s ease;
 `
+
+const Sliders = styled.div`
+    min-width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #${props=>props.bg};
+`
 const Slider = () => {
     const [slideIndex , setSlideIndex] = useState(0)
     const handelClick = (direction) =>{
@@ -45,7 +53,7 @@ const Slider = () => {
             <Wrapper slideindex={slideIndex}>
                 {sliderItems.map((item)=>{
                     return(
-                    <div className="slide" key={item.id}>
+                    <Sliders key={item.id} bg={item.bg}>
                         <div className="image-container">
                             <img src={item.img} alt="man-img" />
                         </div>
@@ -54,7 +62,7 @@ const Slider = () => {
                             <p>{item.desc}</p>
                             <button>SHOW NOW</button>
                         </div>
-                    </div>  
+                    </Sliders>  
                     )                  
                 })}
             </Wrapper>
