@@ -1,7 +1,6 @@
 .navbar-container , .search-container , .search-wrepper,.navbar-manuitem-container{
     display: flex;
     align-items: center;
-    /* border: 2px solid red; */
 }
 .navbar-container{
     justify-content: space-between;
