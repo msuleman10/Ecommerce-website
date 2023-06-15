@@ -10,7 +10,7 @@ const Container = styled.div`
     font-size: 14px;
     font-weight: 500;
     padding-left: 65px;
-`
+`;
 
 const Announcement = () => {
     return (
